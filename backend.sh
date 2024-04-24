@@ -59,7 +59,7 @@ VALIDATION $? "Unzipping the package"
 npm install &>>$LOG_FILE
 VALIDATION $? "Execute npm command"
 
-cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>$LOG_FILE
+cp /home/ec2-user/expense-shell-latest/backend.service /etc/systemd/system/backend.service &>>$LOG_FILE
 VALIDATION $? "Copying backend service file"
 
 systemctl daemon-reload &>>$LOG_FILE
