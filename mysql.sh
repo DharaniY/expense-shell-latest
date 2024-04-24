@@ -7,13 +7,13 @@
 echo "Please enter DB password:"
 read -s mysql_root_password
 
-if [ "$USERID" -ne 0 ]
-then
-    echo "Login with root user for perform this action."
-    exit 1  # exit if user is not root user
-else
-    echo "You are root user"
-fi
+# if [ "$USERID" -ne 0 ]
+# then
+#     echo "Login with root user for perform this action."
+#     exit 1  # exit if user is not root user
+# else
+#     echo "You are root user"
+# fi
 
 
 # install mysql package
